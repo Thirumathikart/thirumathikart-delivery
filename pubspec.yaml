@@ -1,0 +1,31 @@
+name: thirumathikart_seller
+description: A Flutter App for Thirumathikart Sellers.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.0 <3.0.0'
+  
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  get: ^4.6.5
+  get_storage: ^2.0.3
+  smooth_page_indicator: ^1.0.0+2
+  font_awesome_flutter: ^10.2.1
+  lottie: ^1.4.3
+  google_fonts: ^3.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+echo "Checking for un-committed files..."
+git status --porcelain || {  echo "un-committed changes found, do commit or stash them"; exit 1; }
