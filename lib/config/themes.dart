@@ -16,4 +16,6 @@ class AppTheme {
   static Color bigButton = const Color.fromARGB(255, 255, 127, 80);
   static Color smallButton = const Color.fromARGB(255, 40, 153, 61);
   static Color searchBar = const Color.fromARGB(167, 222, 225, 226);
+  static Color bin = const Color.fromARGB(255, 255, 0, 0);
+  static Color divider = const Color.fromARGB(99, 137, 130, 130);
 }
