@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.thirumathikart_seller">
+    package="com.example.thirumathikart_delivery">
    <application
-        android:label="thirumathikart_seller"
+        android:label="thirumathikart_delivery"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
