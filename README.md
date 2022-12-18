@@ -1,6 +1,6 @@
-# Thirumathikart Seller App
+# Thirumathikart Delivery App
 
-Flutter Application for Thirumathikart-Seller
+Flutter Application for Thirumathikart-Delivery
 
 
 ## Flutter
