@@ -30,7 +30,7 @@ class ProfilePage extends GetView<ProfileController> {
     controller.initialize();
 
     return Scaffold(
-      appBar: appBar('Seller Profile'),
+      appBar: appBar('Profile'),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -182,7 +182,10 @@ class ProfilePage extends GetView<ProfileController> {
             ),
             Padding(
               padding: const EdgeInsets.all(20.0),
-              child: AppButton(buttonName: 'Save', onPressed: () => {}),
+              child: AppButton(
+                  buttonName: 'Save',
+                  onPressed: () =>
+                      {Get.snackbar('Profile', 'Saved Successfully')}),
             ),
           ],
         ),

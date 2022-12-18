@@ -20,7 +20,7 @@ class SplashController extends GetxController {
       splashTimer = Timer(const Duration(milliseconds: 3000), () {
         String? token = storage.retriveJWT();
         String route = NavigationRoutes.loginRoute;
-        if (token == null) {
+        if (token != null) {
           route = NavigationRoutes.home;
         }
         Get.offAndToNamed(route);

@@ -11,7 +11,7 @@ import 'package:thirumathikart_seller/services/storage_service.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initServices();
-  runApp(const Thirumathikart());
+  runApp(Thirumathikart());
 }
 
 Future<void> initServices() async {
@@ -20,8 +20,8 @@ Future<void> initServices() async {
 }
 
 class Thirumathikart extends StatelessWidget {
-  const Thirumathikart({Key? key}) : super(key: key);
-
+  Thirumathikart({Key? key}) : super(key: key);
+  final storage = Get.find<StorageServices>();
   @override
   Widget build(BuildContext context) => GetMaterialApp(
         themeMode: ThemeMode.light,

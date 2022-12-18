@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:thirumathikart_seller/constants/navigation_routes.dart';
 import 'package:thirumathikart_seller/constants/orders_constants.dart';
 import 'package:thirumathikart_seller/controllers/todays_orders_controller.dart';
 import 'package:thirumathikart_seller/widgets/app_bar.dart';
 import 'package:thirumathikart_seller/config/themes.dart';
 import 'package:thirumathikart_seller/widgets/button/orders_button.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class TodaysOrdersPage extends GetView<TodaysOrdersController> {
   const TodaysOrdersPage({Key? key}) : super(key: key);
@@ -110,11 +112,16 @@ class TodaysOrdersPage extends GetView<TodaysOrdersController> {
           Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
             Expanded(
               child: OrdersButton(
-                  buttonName: 'GET DIRECTIONS', onPressed: () => {}),
+                  buttonName: 'GET DIRECTIONS',
+                  onPressed: () => {Get.toNamed(NavigationRoutes.map)}),
             ),
             Expanded(
               child: OrdersButton(
-                  buttonName: 'CALL CUSTOMER', onPressed: () => {}),
+                  buttonName: 'CALL CUSTOMER',
+                  onPressed: () => {
+                        launchUrl(Uri.parse(
+                            'tel:${orderList[position]['CustomerContact']}'))
+                      }),
             ),
           ]),
         ]),

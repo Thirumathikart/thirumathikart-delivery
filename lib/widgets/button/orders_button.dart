@@ -36,6 +36,7 @@ class OrdersButton extends GetView<HomeController> {
                   color: AppTheme.facebook,
                   fontWeight: FontWeight.bold,
                 ),
+                textAlign: TextAlign.center,
               )),
         ),
       );
