@@ -5,6 +5,8 @@ import 'package:thirumathikart_seller/bindings/past_orders_binding.dart';
 import 'package:thirumathikart_seller/bindings/todays_orders_bindings.dart';
 import 'package:thirumathikart_seller/bindings/profile_bindings.dart';
 import 'package:thirumathikart_seller/constants/navigation_routes.dart';
+import 'package:thirumathikart_seller/bindings/map_bindings.dart';
+import 'package:thirumathikart_seller/views/map_page.dart';
 import 'package:thirumathikart_seller/views/home_page.dart';
 import 'package:thirumathikart_seller/views/login.dart';
 import 'package:thirumathikart_seller/views/past_orders.dart';
@@ -37,6 +39,11 @@ class NavigationPages {
           name: NavigationRoutes.pastOrdersRoute,
           page: () => const PastOrdersPage(),
           binding: PastOrdersBindings(),
+        ),
+        GetPage(
+          name: NavigationRoutes.map,
+          page: MapPage.new,
+          binding: MapBindings(),
         ),
       ];
 }
