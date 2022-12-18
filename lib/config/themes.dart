@@ -6,6 +6,7 @@ class AppTheme {
   static Color textSecondary = Colors.white;
   static Color unSelected = const Color.fromARGB(255, 40, 153, 61);
   static Color selected = const Color(0xFF0F1113);
+  static Color deSelected = const Color.fromARGB(255, 106, 106, 107);
   static Color google = const Color(0xFFFF7722);
   static Color facebook = const Color(0xFF138808);
   static Color chakra = const Color.fromARGB(255, 13, 13, 173);

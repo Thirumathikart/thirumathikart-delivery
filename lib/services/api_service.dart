@@ -11,7 +11,12 @@ class ApiServices extends GetxService {
 }
 
 class ApiManager extends GetConnect {
-  final headers = {
+  @override
+  void onInit() {
+    httpClient.timeout = const Duration(seconds: 10);
+  }
+
+  var headers = {
     'Accept': 'application/json',
     'Access-Control-Allow-Origin': '*',
   };

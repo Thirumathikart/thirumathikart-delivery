@@ -1,3 +1,5 @@
 class ApiConstants {
-  static String baseUrl = 'http://thirumathikart.nitt.edu:8000/';
+  static String baseUrl = 'https://thirumathikart.nitt.edu/api/auth';
+  static String login = '$baseUrl/api/user/loginCustomer';
+  static String orderBaseUrl = 'https://thirumathikart.nitt.edu/api/product';
 }
