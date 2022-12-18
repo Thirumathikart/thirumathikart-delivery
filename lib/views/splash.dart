@@ -6,10 +6,13 @@ class SplashPage extends GetView<SplashController> {
   const SplashPage({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) => Center(
-        child: Image.asset(
-          'assets/tklogo.jpeg',
-          height: 250,
+  Widget build(BuildContext context) => Container(
+        color: Colors.white,
+        child: Center(
+          child: Image.asset(
+            'assets/tklogo.jpeg',
+            height: 250,
+          ),
         ),
       );
 }
