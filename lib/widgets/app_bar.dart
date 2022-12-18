@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:thirumathikart_seller/config/themes.dart';
-import 'package:thirumathikart_seller/constants/navigation_routes.dart';
+import 'package:thirumathikart_delivery/config/themes.dart';
+import 'package:thirumathikart_delivery/constants/navigation_routes.dart';
 
 PreferredSizeWidget appBar(String label) => AppBar(
     backgroundColor: AppTheme.bg,

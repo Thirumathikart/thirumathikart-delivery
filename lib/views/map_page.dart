@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:thirumathikart_seller/controllers/map_controller.dart';
-import 'package:thirumathikart_seller/widgets/app_bar.dart';
+import 'package:thirumathikart_delivery/controllers/map_controller.dart';
+import 'package:thirumathikart_delivery/widgets/app_bar.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:google_map_polyline_new/google_map_polyline_new.dart';
 

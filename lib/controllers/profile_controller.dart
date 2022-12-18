@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:thirumathikart_seller/models/address.dart';
-import 'package:thirumathikart_seller/models/seller.dart';
+import 'package:thirumathikart_delivery/models/address.dart';
+import 'package:thirumathikart_delivery/models/seller.dart';
 
 class ProfileController extends GetxController {
   final seller = Seller(

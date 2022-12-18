@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:thirumathikart_seller/constants/navigation_routes.dart';
-import 'package:thirumathikart_seller/constants/orders_constants.dart';
-import 'package:thirumathikart_seller/controllers/todays_orders_controller.dart';
-import 'package:thirumathikart_seller/widgets/app_bar.dart';
-import 'package:thirumathikart_seller/config/themes.dart';
-import 'package:thirumathikart_seller/widgets/button/orders_button.dart';
+import 'package:thirumathikart_delivery/constants/navigation_routes.dart';
+import 'package:thirumathikart_delivery/constants/orders_constants.dart';
+import 'package:thirumathikart_delivery/controllers/todays_orders_controller.dart';
+import 'package:thirumathikart_delivery/widgets/app_bar.dart';
+import 'package:thirumathikart_delivery/config/themes.dart';
+import 'package:thirumathikart_delivery/widgets/button/orders_button.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class TodaysOrdersPage extends GetView<TodaysOrdersController> {

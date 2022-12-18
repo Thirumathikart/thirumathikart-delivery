@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:thirumathikart_seller/controllers/login_controller.dart';
-import 'package:thirumathikart_seller/widgets/app_bar.dart';
-import 'package:thirumathikart_seller/widgets/button/login_button.dart';
+import 'package:thirumathikart_delivery/controllers/login_controller.dart';
+import 'package:thirumathikart_delivery/widgets/app_bar.dart';
+import 'package:thirumathikart_delivery/widgets/button/login_button.dart';
 
 class LoginPage extends GetView<LoginController> {
   const LoginPage({super.key});

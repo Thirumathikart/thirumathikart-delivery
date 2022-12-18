@@ -1,19 +1,19 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
-import 'package:thirumathikart_seller/bindings/home_bindings.dart';
-import 'package:thirumathikart_seller/bindings/login_bindings.dart';
-import 'package:thirumathikart_seller/bindings/past_orders_binding.dart';
-import 'package:thirumathikart_seller/bindings/splash_binding.dart';
-import 'package:thirumathikart_seller/bindings/todays_orders_bindings.dart';
-import 'package:thirumathikart_seller/bindings/profile_bindings.dart';
-import 'package:thirumathikart_seller/constants/navigation_routes.dart';
-import 'package:thirumathikart_seller/bindings/map_bindings.dart';
-import 'package:thirumathikart_seller/views/map_page.dart';
-import 'package:thirumathikart_seller/views/home_page.dart';
-import 'package:thirumathikart_seller/views/login.dart';
-import 'package:thirumathikart_seller/views/past_orders.dart';
-import 'package:thirumathikart_seller/views/splash.dart';
-import 'package:thirumathikart_seller/views/todays_orders.dart';
-import 'package:thirumathikart_seller/views/profile.dart';
+import 'package:thirumathikart_delivery/bindings/home_bindings.dart';
+import 'package:thirumathikart_delivery/bindings/login_bindings.dart';
+import 'package:thirumathikart_delivery/bindings/past_orders_binding.dart';
+import 'package:thirumathikart_delivery/bindings/splash_binding.dart';
+import 'package:thirumathikart_delivery/bindings/todays_orders_bindings.dart';
+import 'package:thirumathikart_delivery/bindings/profile_bindings.dart';
+import 'package:thirumathikart_delivery/constants/navigation_routes.dart';
+import 'package:thirumathikart_delivery/bindings/map_bindings.dart';
+import 'package:thirumathikart_delivery/views/map_page.dart';
+import 'package:thirumathikart_delivery/views/home_page.dart';
+import 'package:thirumathikart_delivery/views/login.dart';
+import 'package:thirumathikart_delivery/views/past_orders.dart';
+import 'package:thirumathikart_delivery/views/splash.dart';
+import 'package:thirumathikart_delivery/views/todays_orders.dart';
+import 'package:thirumathikart_delivery/views/profile.dart';
 
 class NavigationPages {
   static List<GetPage<dynamic>> getPages() => [

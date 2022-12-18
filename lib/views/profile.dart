@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:thirumathikart_seller/config/themes.dart';
-import 'package:thirumathikart_seller/controllers/profile_controller.dart';
-import 'package:thirumathikart_seller/widgets/app_bar.dart';
+import 'package:thirumathikart_delivery/config/themes.dart';
+import 'package:thirumathikart_delivery/controllers/profile_controller.dart';
+import 'package:thirumathikart_delivery/widgets/app_bar.dart';
 import 'package:get/get.dart';
-import 'package:thirumathikart_seller/widgets/card/profile_address_card.dart';
-import 'package:thirumathikart_seller/widgets/card/profile_card.dart';
-import 'package:thirumathikart_seller/widgets/utils/app_button.dart';
+import 'package:thirumathikart_delivery/widgets/card/profile_address_card.dart';
+import 'package:thirumathikart_delivery/widgets/card/profile_card.dart';
+import 'package:thirumathikart_delivery/widgets/utils/app_button.dart';
 
 class ProfilePage extends GetView<ProfileController> {
   const ProfilePage({Key? key}) : super(key: key);

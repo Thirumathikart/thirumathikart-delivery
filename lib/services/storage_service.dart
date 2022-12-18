@@ -1,6 +1,6 @@
 import 'package:get_storage/get_storage.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_disposable.dart';
-import 'package:thirumathikart_seller/constants/storageconstants.dart';
+import 'package:thirumathikart_delivery/constants/storageconstants.dart';
 
 class StorageServices extends GetxService {
   late GetStorage storage;

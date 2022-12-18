@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:get/instance_manager.dart';
-import 'package:thirumathikart_seller/constants/navigation_routes.dart';
-import 'package:thirumathikart_seller/services/storage_service.dart';
+import 'package:thirumathikart_delivery/constants/navigation_routes.dart';
+import 'package:thirumathikart_delivery/services/storage_service.dart';
 
 class SplashController extends GetxController {
   final storage = Get.find<StorageServices>();

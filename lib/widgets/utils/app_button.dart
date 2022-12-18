@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/src/simple/get_view.dart';
-import 'package:thirumathikart_seller/config/themes.dart';
-import 'package:thirumathikart_seller/controllers/home_controller.dart';
+import 'package:thirumathikart_delivery/config/themes.dart';
+import 'package:thirumathikart_delivery/controllers/home_controller.dart';
 
 class AppButton extends GetView<HomeController> {
   const AppButton({Key? key, required this.buttonName, required this.onPressed})

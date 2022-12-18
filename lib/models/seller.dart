@@ -1,4 +1,4 @@
-import 'package:thirumathikart_seller/models/address.dart';
+import 'package:thirumathikart_delivery/models/address.dart';
 
 class Seller {
   String? firstName, lastName, email, ifscCode;

@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:thirumathikart_seller/config/navigations.dart';
-import 'package:thirumathikart_seller/constants/navigation_routes.dart';
-import 'package:thirumathikart_seller/services/api_service.dart';
-import 'package:thirumathikart_seller/services/storage_service.dart';
+import 'package:thirumathikart_delivery/config/navigations.dart';
+import 'package:thirumathikart_delivery/constants/navigation_routes.dart';
+import 'package:thirumathikart_delivery/services/api_service.dart';
+import 'package:thirumathikart_delivery/services/storage_service.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

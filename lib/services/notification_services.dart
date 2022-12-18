@@ -2,7 +2,7 @@
 // import 'package:firebase_messaging/firebase_messaging.dart';
 // import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 // import 'package:get/get_state_manager/get_state_manager.dart';
-// import 'package:thirumathikart_seller/constants/notification_constants.dart';
+// import 'package:thirumathikart_delivery/constants/notification_constants.dart';
 
 // Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
 //   await Firebase.initializeApp();

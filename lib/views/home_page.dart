@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
-import 'package:thirumathikart_seller/controllers/home_controller.dart';
+import 'package:thirumathikart_delivery/controllers/home_controller.dart';
 import 'package:get/get.dart';
-import 'package:thirumathikart_seller/config/themes.dart';
-import 'package:thirumathikart_seller/constants/screen_constants.dart';
+import 'package:thirumathikart_delivery/config/themes.dart';
+import 'package:thirumathikart_delivery/constants/screen_constants.dart';
 
 class HomePage extends GetView<HomeController> {
   const HomePage({Key? key}) : super(key: key);

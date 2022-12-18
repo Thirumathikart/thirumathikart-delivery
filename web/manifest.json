@@ -1,6 +1,6 @@
 {
-    "name": "thirumathikart_seller",
-    "short_name": "thirumathikart_seller",
+    "name": "thirumathikart_delivery",
+    "short_name": "thirumathikart_delivery",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

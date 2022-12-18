@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:thirumathikart_seller/views/past_orders.dart';
-import 'package:thirumathikart_seller/views/profile.dart';
-import 'package:thirumathikart_seller/views/todays_orders.dart';
+import 'package:thirumathikart_delivery/views/past_orders.dart';
+import 'package:thirumathikart_delivery/views/profile.dart';
+import 'package:thirumathikart_delivery/views/todays_orders.dart';
 
 class ScreenContants {
   List<Icon> iconItems = const [

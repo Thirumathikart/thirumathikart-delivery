@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:thirumathikart_seller/constants/orders_constants.dart';
-import 'package:thirumathikart_seller/controllers/past_orders_controller.dart';
-import 'package:thirumathikart_seller/widgets/app_bar.dart';
-import 'package:thirumathikart_seller/config/themes.dart';
+import 'package:thirumathikart_delivery/constants/orders_constants.dart';
+import 'package:thirumathikart_delivery/controllers/past_orders_controller.dart';
+import 'package:thirumathikart_delivery/widgets/app_bar.dart';
+import 'package:thirumathikart_delivery/config/themes.dart';
 
 class PastOrdersPage extends GetView<PastOrdersController> {
   const PastOrdersPage({Key? key}) : super(key: key);
