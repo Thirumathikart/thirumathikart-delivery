@@ -4,6 +4,7 @@ import 'package:thirumathikart_delivery/controllers/map_controller.dart';
 import 'package:thirumathikart_delivery/widgets/app_bar.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:google_map_polyline_new/google_map_polyline_new.dart';
+import 'package:qr_flutter/qr_flutter.dart';
 
 class MapPage extends GetView<MapController> {
   MapPage({super.key});
@@ -101,8 +102,8 @@ class MapPage extends GetView<MapController> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
-                    children: const [
-                      Padding(
+                    children: [
+                      const Padding(
                         padding: EdgeInsets.only(bottom: 10),
                         child: Text(
                           'Buyer: Buyer Name',
@@ -110,34 +111,42 @@ class MapPage extends GetView<MapController> {
                               fontWeight: FontWeight.bold, fontSize: 16.0),
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.only(bottom: 10),
                         child: Text(
                           'Delivery Address : Buyer Address',
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.only(bottom: 10),
                         child: Text(
                           'Buyer Contact : 1234567890',
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.only(bottom: 10),
                         child: Text(
                           'Product Name - Poduct ',
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.only(bottom: 10),
                         child: Text(
                           'Seller: Seller Name',
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.only(bottom: 10),
                         child: Text(
                           'Return Address: Seller Address',
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 10),
+                        child: QrImage(
+                          data: '1234567890',
+                          version: QrVersions.auto,
+                          size: 200.0,
                         ),
                       ),
                     ],
