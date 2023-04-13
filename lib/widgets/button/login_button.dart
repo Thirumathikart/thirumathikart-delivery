@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:thirumathikart_delivery/config/themes.dart';
-import 'package:thirumathikart_delivery/constants/navigation_routes.dart';
-import 'package:thirumathikart_delivery/services/storage_service.dart';
+import 'package:thirumathikart_delivery/controllers/login_controller.dart';
 
-class LoginButton extends StatelessWidget {
-  LoginButton({super.key});
-  final storage = Get.find<StorageServices>();
+class LoginButton extends GetView<LoginController> {
+  const LoginButton({super.key});
+
   @override
   Widget build(BuildContext context) => Container(
         margin: const EdgeInsets.only(top: 30),
         width: MediaQuery.of(context).size.width,
         child: MaterialButton(
           onPressed: () {
-            storage.storeJWT('jwt');
-            Get.offAndToNamed(NavigationRoutes.home);
+            controller.login();
           },
           color: AppTheme.facebook,
           shape: const RoundedRectangleBorder(
