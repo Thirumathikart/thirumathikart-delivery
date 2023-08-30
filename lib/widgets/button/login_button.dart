@@ -2,19 +2,45 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:thirumathikart_delivery/config/themes.dart';
 import 'package:thirumathikart_delivery/constants/navigation_routes.dart';
-import 'package:thirumathikart_delivery/services/storage_service.dart';
+import 'package:thirumathikart_delivery/controllers/auth_controller.dart';
+// import 'package:thirumathikart_delivery/services/storage_service.dart';
 
-class LoginButton extends StatelessWidget {
-  LoginButton({super.key});
-  final storage = Get.find<StorageServices>();
+class LoginButton extends GetView<AuthController> {
+  const LoginButton({super.key});
+
+  // final storage = Get.find<StorageServices>();
   @override
-  Widget build(BuildContext context) => Container(
+//   Widget build(BuildContext context) => Container(
+//         margin: const EdgeInsets.only(top: 30),
+//         width: MediaQuery.of(context).size.width,
+//         child: MaterialButton(
+//           onPressed: () {
+//             storage.storeJWT('jwt');
+//             Get.offAndToNamed(NavigationRoutes.home);
+//           },
+//           color: AppTheme.facebook,
+//           shape: const RoundedRectangleBorder(
+//             borderRadius: BorderRadius.all(
+//               Radius.circular(50),
+//             ),
+//           ),
+//           padding: const EdgeInsets.all(16),
+//           child: const Text(
+//             'Login',
+//             style: TextStyle(
+//                 color: Colors.white, fontWeight: FontWeight.w700, fontSize: 16),
+//           ),
+//         ),
+//       );
+// }
+
+
+Widget build(BuildContext context) => Container(
         margin: const EdgeInsets.only(top: 30),
         width: MediaQuery.of(context).size.width,
         child: MaterialButton(
           onPressed: () {
-            storage.storeJWT('jwt');
-            Get.offAndToNamed(NavigationRoutes.home);
+            controller.login();
           },
           color: AppTheme.facebook,
           shape: const RoundedRectangleBorder(
@@ -23,10 +49,16 @@ class LoginButton extends StatelessWidget {
             ),
           ),
           padding: const EdgeInsets.all(16),
-          child: const Text(
-            'Login',
-            style: TextStyle(
-                color: Colors.white, fontWeight: FontWeight.w700, fontSize: 16),
+          child: Obx(
+            () => !controller.isLoading.value
+                ? const Text(
+                    'Login',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w700,
+                        fontSize: 16),
+                  )
+                : const CircularProgressIndicator(color: Colors.white),
           ),
         ),
       );

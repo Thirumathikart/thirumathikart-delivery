@@ -1,3 +1,6 @@
+
+
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:thirumathikart_delivery/controllers/map_controller.dart';
@@ -16,21 +19,6 @@ class MapPage extends GetView<MapController> {
   // late List<LatLng>? routeCoords;
   final GoogleMapPolyline googleMapPolyline =
       GoogleMapPolyline(apiKey: 'AIzaSyB4i_iNoZguZkAUIB6rBjlRU85g2KkSdj4');
-
-// getsomePoints() async {
-//     var permissions =
-//         await Permission.getPermissionsStatus([PermissionName.Location]);
-//     if (permissions[0].permissionStatus == PermissionStatus.notAgain) {
-//       var askpermissions =
-//           await Permission.requestPermissions([PermissionName.Location]);
-//     } else {
-//       routeCoords = await googleMapPolyline.getCoordinatesWithLocation(
-//           origin: LatLng(40.6782, -73.9442),
-//           destination: LatLng(40.6944, -73.9212),
-//           mode: RouteMode.driving);
-//     }
-//   }
-
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: appBar('Map'),
@@ -158,3 +146,7 @@ class MapPage extends GetView<MapController> {
         ),
       );
 }
+
+
+
+

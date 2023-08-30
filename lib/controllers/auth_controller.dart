@@ -1,16 +1,15 @@
-
-
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
+import 'package:thirumathikart_delivery/bindings/forgotPassword.dart';
 import 'package:thirumathikart_delivery/constants/navigation_routes.dart';
 import 'package:thirumathikart_delivery/models/login_request.dart';
 import 'package:thirumathikart_delivery/models/register_request.dart';
+
 import 'package:thirumathikart_delivery/services/api_service.dart';
 import 'package:thirumathikart_delivery/services/storage_service.dart';
 
-class loginController extends GetxController {
+
+class AuthController extends GetxController {
   PageController pageViewController = PageController(initialPage: 0);
   final scaffoldKey = GlobalKey<ScaffoldState>();
   final api = Get.find<ApiServices>().api;
@@ -18,6 +17,7 @@ class loginController extends GetxController {
   final isLoading = false.obs;
   final userNameTextController = TextEditingController();
   final passwordTextController = TextEditingController();
+  final forgotPasswordEmailController=TextEditingController();
 
   var firstNameTextController = TextEditingController();
   final lastNameTextController = TextEditingController();
@@ -45,6 +45,23 @@ class loginController extends GetxController {
       Get.snackbar('Failed To Login', err.toString());
     });
   }
+
+  void forgotPassword() async {
+  final email = forgotPasswordEmailController.text;
+  if (email.isEmpty) {
+    Get.snackbar('Invalid Email', 'Please enter your email address');
+    return;
+  }
+  isLoading.value = true;
+  api.forgotPassword(email).then((_) {
+    isLoading.value = true;
+    Get.snackbar('Forgot Password', 'Password reset instructions sent to $email');
+  }, onError: (err) {
+    isLoading.value = false;
+    Get.snackbar('Forgot Password Failed', err.toString());
+  });
+}
+
 
   void register() async {
     final firstName = firstNameTextController.text;

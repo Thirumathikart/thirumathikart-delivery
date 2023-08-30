@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_state_manager/get_state_manager.dart';
+// import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:thirumathikart_delivery/controllers/home_controller.dart';
 import 'package:get/get.dart';
 import 'package:thirumathikart_delivery/config/themes.dart';
@@ -13,6 +13,39 @@ class HomePage extends GetView<HomeController> {
     var screenConstants = ScreenContants();
     return SafeArea(
         child: Scaffold(
+          //   appBar: AppBar(
+              
+          //    title: const Text('Thirumathikart',style:TextStyle(color:Colors.black)),
+          //    backgroundColor:Colors.white,
+          //   actions: [
+          //     IconButton(
+          //       icon: const Icon(Icons.logout),
+          //       onPressed: () {
+          //         // Show SnackBar before logging out
+          //         Get.snackbar(
+          //           'Logout',
+          //           'Are you sure you want to logout?',
+          //           duration: const Duration(seconds: 5),
+          //           snackPosition: SnackPosition.TOP,
+          //           mainButton: TextButton(
+          //             onPressed: () {
+          //               // Call your logout logic here
+          //               // For example:
+          //               controller.logout();
+          //               Get.back(); // Dismiss the SnackBar
+          //             },
+                     
+          //             child: const Text(
+          //               'Yes',
+          //               style: TextStyle(color: Color.fromARGB(255, 241, 4, 4)),
+          //             ),
+          //           ),
+          //         );
+          //       },
+          //        color:Colors.black,
+          //     ),
+          //   ],
+          // ),
             backgroundColor: Colors.transparent,
             body: Stack(children: [
               PageView(

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:get/get_rx/src/rx_types/rx_types.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
+import 'package:thirumathikart_delivery/constants/navigation_routes.dart';
 
 class HomeController extends GetxController {
   final selectedIndex = 0.obs;
@@ -21,5 +23,10 @@ class HomeController extends GetxController {
   void onPageChanged() {
     pageController.animateToPage(selectedIndex.value,
         duration: const Duration(milliseconds: 300), curve: Curves.bounceIn);
+  }
+
+   void logout()async{
+    Get.offAllNamed(NavigationRoutes.loginRoute);
+    // navigateToLogin();
   }
 }

@@ -10,9 +10,9 @@ class ScreenContants {
     Icon(Icons.shopping_cart_outlined),
   ];
 
-  var widgetItems = const [ProfilePage(), TodaysOrdersPage(), PastOrdersPage()];
+  var widgetItems =  [ProfilePage(), TodaysOrdersPage(), PastOrdersPage()];
 
-  var navItems = const [
+  var navItems =  [
     {
       'title': 'Todays Orders',
       'icon': Icon(Icons.shopping_cart_outlined),
@@ -23,10 +23,10 @@ class ScreenContants {
       'icon': Icon(Icons.person_outline),
       'widget': ProfilePage(),
     },
-    {
-      'title': 'Past Orders',
-      'icon': Icon(Icons.calendar_month_outlined),
-      'widget': PastOrdersPage(),
-    },
+    // {
+    //   'title': 'Past Orders',
+    //   'icon': Icon(Icons.calendar_month_outlined),
+    //   'widget': PastOrdersPage(),
+    // },
   ];
 }

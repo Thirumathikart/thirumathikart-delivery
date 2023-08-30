@@ -1,18 +1,15 @@
-
-
 import 'package:get/get.dart';
-import 'package:thirumathikart_delivery/constants/navigation_routes.dart';
 import 'package:thirumathikart_delivery/constants/product_constants.dart';
 import 'package:thirumathikart_delivery/models/order.dart';
 import 'package:thirumathikart_delivery/services/api_service.dart';
 import 'package:thirumathikart_delivery/services/storage_service.dart';
 
-class TodaysOrdersController extends GetxController {
+
+class OrdersController extends GetxController {
   RxList<OrderDisplay> order = <OrderDisplay>[].obs;
   final api = Get.find<ApiServices>().api;
   final storageService = Get.find<StorageServices>();
 
-  
   void fetchOrder() async {
   await api.fetchOrder(storageService).then(
     (response) {
@@ -54,8 +51,7 @@ class TodaysOrdersController extends GetxController {
             status: response.response![i].order!.orderStatus.toString(),
             totalAmount: total,
             orderItemsList: orderItems,
-            customerAddress:'${response.response![i].customer!.address!.line1}  ${response.response![i].customer!.address!.line2}   ${ response.response![i].customer!.address!.landmark}   ${response.response![i].customer!.address!.district}   ${response.response![i].customer!.address!.state}  ${response.response![i].customer!.address!.pincode}',
-            customerContact:response.response![i].customer!.contact,
+            customerAddress: response.response![i].customer!.address!.line1,
             sellerName:
                 '${response.response![i].seller!.firstName} ${response.response![i].seller!.lastName}',
             sellerAddress: response.response![i].seller!.address!.line1,
@@ -71,10 +67,4 @@ class TodaysOrdersController extends GetxController {
     },
   );
 }
- void logout()async{
-    Get.offAllNamed(NavigationRoutes.loginRoute);
-    // navigateToLogin();
-  }
 }
-
-   
